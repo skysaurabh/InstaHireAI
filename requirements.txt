@@ -1,0 +1,34 @@
+flask
+pip3 install --upgrade pip
+python3 -m pip install --upgrade setuptools
+tensorflow --no-cache-dir
+
+sklearn 
+numpy
+pandas
+nltk
+
+keras
+
+pdfminer
+spacy
+pickle5
+
+python3 -m spacy download en_core_web_sm
+
+
+sudo apt-get install python3.6-dev libmysqlclient-dev
+pip3 install flask-mysqldb
+
+
+
+
+
+
+
+
+employer login giving error 404
+All jobs page
+Candidate scores are not updating
+
+chatbot not working
