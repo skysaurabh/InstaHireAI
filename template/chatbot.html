@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>ChatAI for InstaHire.AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shoelace-css/1.0.0-beta16/shoelace.css">
+    <!-- <link rel="stylesheet" href="styles_vc.css"> -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <title>Voice Controlled Notes App</title> -->
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    
+  </head>
+  <body>
+    <br>
+<h1 class="heading">InstaHire Recruitment </h1>
+
+<button onclick="export2txt()" class='button button1'>Submit details</button>
+
+<button class="button button1" onclick="location.href='chatbot-home';">End Chat</button>
+
+<button id="start-record-btn" title="Start Recording">Start Recognition</button>
+                <button id="pause-record-btn" title="Pause Recording">Pause Recognition</button>
+                <br>
+<p style="color: red">Clicking on "End Chat" will not save the details!</p>
+    <div class="chat" id = "my-div" style="overflow-x: auto;height:300px;">
+
+      <br>
+
+      <div class="container">
+
+            <div class="app"> 
+                
+                <div class="input-single">
+      <form class="actions">
+        <input type="textarea" id="note-textarea" placeholder='Create a new note by typing or using voice recognition.' autofocus>
+      
+      </form> 
+</div>         
+                
+       
+
+            </div>
+
+        </div>
+
+      <div class="messages" ></div>
+
+      <div id="edge"></div>
+
+      
+
+
+
+    </div>
+  
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="{{ url_for('static', filename='script_vc.js') }}"></script>
+
+
+
+
+  </body>
+</html>

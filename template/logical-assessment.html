@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard-my-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 04:03:23 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidemenu-area">
+        <div class="sidemenu-header">
+            <a href="dashboard" class="navbar-brand d-flex align-items-center">
+                <img src="static/images/logo.png" alt="image">
+            </a>
+            <div class="responsive-burger-menu d-block d-lg-none">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-dashboard-content d-flex flex-column">
+
+        <div class="navbar-area">
+            <div class="main-responsive-nav">
+                <div class="main-responsive-menu">
+                    <div class="responsive-burger-menu d-lg-none d-block">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-responsive-nav">
+                <div class="mobile-responsive-menu">
+                </div>
+            </div>
+
+            <div class="desktop-nav desktop-nav-one nav-area">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                        </ul>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="breadcrumb-area">
+            <h1>Logical Reasoning</h1>
+            <ol class="breadcrumb">
+                <li class="item"><a href="dashboard">Home</a></li>
+            </ol>
+        </div>
+
+
+        <div class="my-profile-box">
+
+            <h3>Direction (for Q.Nos. 1 - 3)</h3>
+            <p style="padding:27px">In each question below are given two statements followed by two conclusions numbered I and II. You have to take the given two statements to be true even if they seem to be at variance from commonly known facts. Read the conclusion and then decide which of the given conclusions logically follows from the two given statements, disregarding commonly known facts.</p>
+            <p style="padding:27px">Give answer: <br>
+
+				(A) If only conclusion I follows<br>
+				(B) If only conclusion II follows<br>
+				(C) If either I or II follows<br>
+				(D) If neither I nor II follows and<br>
+				(E) If both I and II follow.</p>
+            <div class="bar"></div>
+            <form action="/logical-assessment-send" method="POST">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>1. Statements: </br>Some swords are sharp.</br> All swords are rusty</label></br>
+                            	<b>Conclusions</b></br>
+                            	<p>Some rusty things are sharp </br>
+                            	Some rusty things are not sharp</p>
+                            <select class="form-select form-control" name="q1">
+                                <option value="1-A">A</option>
+                                <option value="1-B">B</option>
+                                <option value="1-C">C</option>
+                                <option value="1-D">D</option>
+                                <option value="1-E">E</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>2. Statements: </br>Some papers are pens
+													</br>Some pencils are pens</label></br>
+                            	<b>Conclusions</b></br>
+                            	<p>Some pens are pencils</br>
+                            	Some pens are papers</p>
+                            <select class="form-select form-control" name="q2">
+                                <option value="2-A">A</option>
+                                <option value="2-B">B</option>
+                                <option value="2-C">C</option>
+                                <option value="2-D">D</option>
+                                <option value="2-E">E</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>3. Statements: </br>All mangoes are golden in colour
+													</br>No golden-coloured things are cheap</label></br>
+                            	<b>Conclusions</b></br>
+                            	<p>All mangoes are cheap</br>
+                            	Golden-coloured mangoes are not cheap</p>
+                            <select class="form-select form-control" name="q3">
+                                <option value="3-A">A</option>
+                                <option value="3-B">B</option>
+                                <option value="3-C">C</option>
+                                <option value="3-D">D</option>
+                                <option value="3-E">E</option>
+                            </select>
+                        </div>
+                    </div></div>
+                    <h3>Direction (for Q.Nos. 4)</h3>
+            <p>Each question given below consists of a statement, followed by three or four arguments numbered I, II, III and IV. You have to decide which of the arguments is/are 'strong' arguments) and which is/are 'weak' arguments) and accordingly choose your answer from the alternatives given below each question.</p>
+            <div class="row align-items-center">     
+                <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>4. Statements: </br>Should the public sector undertakings be kilo wed to adopt hire and fire policy?</label></br>
+                            <p>Argument 1. Yes. This will help the public sector undertakings to get rid of non-performing employees and reward the performing employees. </br> 
+                            Argument 2. No. This will give an unjust handle to the management and they may use it indiscriminately. Yes. This will help increase the level of efficiency of these organizations and these will become profitable establishments.</p>
+                            <select class="form-select form-control" name="q4">
+                                <option value="4-A">A. None is strong</option>
+                                <option value="4-B">B. Only I and II are strong</option>
+                                <option value="4-C">C. Only II and III are strong</option>
+                                <option value="4-D">D. Only I and III are strong</option>
+                                <option value="4-E">E. All are strong</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+                    <h3>Direction (for Q.Nos. 5-6)</h3>
+            <p>In each question below is given a statement followed by three assumptions numbered I, II and III. You have to consider the statement and the following assumptions, decide which of the assumptions is implicit in the statement and choose your answer accordingly. </p>
+            <div class="row align-items-center">        
+            <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>5. Statements: </br> Bombay people were spellbound, mesmerized and got mad when they saw the famous pop-singer Michael Jackson's hi-tech pulsating megawatt performance. </label></br>
+                            <p>Assumptions:  When a show is accompanied with latest technology, it has a magical effect. Bombay people were never impressed with performances by Indian musicians. Michael Jackson is a super singer.</p>
+                            <select class="form-select form-control" name="q5">
+                                <option value="5-A">A. Only I is implicit</option>
+                                <option value="5-B">B. Only II is implicit</option>
+                                <option value="5-C">C. Only I and III are implicit</option>
+                                <option value="5-D">D. Either II or III is implicit</option>
+                                <option value="5-E">E. Only II and III are implicit</option>
+                            </select>
+                        </div>
+                    </div></div>
+                    <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>6. Statements: </br> "If you are intelligent, we are the right people for improving your performance." - An advertisement of a coaching institute. </label></br>
+                            <p>Assumption 1: Brilliant students prefer to join coaching classes. </br>
+							   Assumption 2: Coaching classes help the students to improve their performance. </br>
+                               Assumption 3: No other institute provides such coaching.</p>
+                            <select class="form-select form-control" name="q6">
+                                <option value="6-A">A. Only I and II are implicit</option>
+                                <option value="6-B">B. Only II and III are implicit</option>
+                                <option value="6-C">C. Only I and III are implicit</option>
+                                <option value="6-D">D. All are implicit</option>
+                                <option value="6-E">E. None of these</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+            <h3>Direction (for Q.Nos. 7)</h3>
+            <p>Each question given below consists of a statement, followed by two arguments numbered I and II. You have to decide which of the arguments is a 'strong' argument and which is a 'weak' argument. </p> </br>
+            <p>Give answer: <br>
+
+				(A) If only argument I is strong<br>
+				(B) If only argument II is strong<br>
+				(C) If either I or II is strong<br>
+				(D) If neither I nor II is strong<br>
+				(E) If both I and II are strong.</p>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>7. Statements: </br> Should there be students union in college/university? </label></br>
+                            <p>Argument 1:  No. This will create a political atmosphere in the campus.</p></br>
+                            <p>Argument 2: Yes, it is very necessary Students are future political leaders.</p>
+                            <select class="form-select form-control" name="q7">
+                                <option value="7-A">A</option>
+                                <option value="7-B">B</option>
+                                <option value="7-C">C</option>
+                                <option value="7-D">D</option>
+                                <option value="7-E">E</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+            <h3>Direction (for Q.Nos. 8-9)</h3>
+            <p>In each question below is given a statement followed by two courses of action numbered I and II. You have to assume everything in the statement to be true and on the basis of the information given in the statement, decide which of the suggested courses of action logically follow(s) for pursuing.</p> </br>
+            <p>Give answer: <br>
+
+				(A) If only I follows<br>
+				(B) If only II follows<br>
+				(C) If either I or II follows<br>
+				(D) If neither I nor II follows<br>
+				(E) If both I and II follow.</p>
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>8. Statements: </br> The police department has come under a cloud with recent revelations that at least two senior police officials are suspected to have been involved in the illegal sale of a large quantity of weapons from the state police armoury. </label></br>
+                            <p>Course of Action 1: A thorough investigation should be ordered by the State Government to bring out all those who are involved into the illegal sale of arms.</p></br>
+                            <p>Course of Action 2: State police armoury should be kept under Central Government's control.</p>
+                            <select class="form-select form-control" name="q8">
+                                <option value="8-A">A</option>
+                                <option value="8-B">B</option>
+                                <option value="8-C">C</option>
+                                <option value="8-D">D</option>
+                                <option value="8-E">E</option>
+                            </select>
+                        </div>
+                    </div></div>
+                    <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>9. Statements: </br> Every year large number of devotees dies due to severe cold on their way to the shrine located at the top of the mountain range. </label></br>
+                            <p>Course of Action 1: The devotees should be discouraged to visit the shrine without having proper warm clothes and other amenities.</p></br>
+                            <p>Course of Action 2: The government should provide warm clothes and shelter to all the devotees visiting the shrine.</p>
+                            <select class="form-select form-control" name="q9">
+                                <option value="9-A">A</option>
+                                <option value="9-B">B</option>
+                                <option value="9-C">C</option>
+                                <option value="9-D">D</option>
+                                <option value="9-E">E</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+            <h3>Direction (for Q.Nos. 10)</h3>
+            <p>Every one of the following questions consists of a related pair of words, followed by five pairs of words. Choose the pair that best represents a similar relationship to the one expressed in the original pair of words.
+			</p> </br>
+
+            <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>10. PETAL : FLOWER </label></br>
+                            <select class="form-select form-control" name="q10">
+                                <option value="10-A">A. salt : pepper</option>
+                                <option value="10-B">B. tire : bicycle</option>
+                                <option value="10-C">C. base : ball</option>
+                                <option value="10-D">D. sandals : shoes</option>
+                                <option value="10-E">E. puppy : dog</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+  			<h3>Direction (for Q.Nos. 11)</h3>
+            <p>The logic problems in this set present you with three true statements: Fact 1, Fact 2, and Fact 3. Then, you are given three more statements (labeled I, II, and III), and you must determine which of these, if any, is also a fact. One or two of the statements could be true; all of the statements could be true; or none of the statements could be true. Choose your answer based solely on the information given in the first three facts.</p> </br>
+            <p>
+
+				Fact 1:	Jessica has four children<br>
+				Fact 2:	Two of the children have blue eyes and two of the children have brown eyes.<br>
+				Fact 3:	Half of the children are girls.<br></p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label></br>If the first three statements are facts, which of the following statements must also be a fact? </label></br>
+                            <p>I:	At least one girl has blue eyes.</p></br>
+                            <p>II:	Two of the children are boys.</p></br>
+                            <p>III:	The boys have brown eyes.</p></br>
+             
+                            <select class="form-select form-control" name="q11">
+                                <option value="11-A">A. I only</option>
+                                <option value="11-B">B. II only</option>
+                                <option value="11-C">C. II and III only</option>
+                                <option value="11-D">D. None of the statements is a known fact.</option>
+
+                            </select>
+                        </div>
+                    </div>  </div>
+
+            <h3>Direction (for Q.Nos. 12)</h3>
+            <p>In each question below is given a statement followed by two assumptions numbered I and II. You have to consider the statement and the following assumptions and decide which of the assumptions is implicit in the statement.</p> 
+        	</br>
+			<p>Give answer: <br>
+
+				(A) If only assumption I is implicit<br>
+				(B) If only assumption II is implicit<br>
+				(C) If either I or II is implicit<br>
+				(D) If neither I nor II is implicit<br>
+				(E) If both I and II are implicit.</p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label></br>Statement: "Use our product to improve memory of our child. It is based on natural herbs and has no harmful side effects." - An advertisement of a pharmaceutical company. </label></br>
+                            <p>Assumption 1: People generally opt for a medical product which is useful and has no harmful side effects.</br>
+							Assumption 2: Improving memory of child is considered as important by many parents.</p></br>
+
+             
+                            <select class="form-select form-control" name="q12">
+                                <option value="12-A">A. </option>
+                                <option value="12-B">B. </option>
+                                <option value="12-C">C. </option>
+                                <option value="12-D">D. </option>
+                                <option value="12-D">E. </option>
+
+                            </select>
+                        </div>
+                    </div> </div>
+
+            <h3>Direction (for Q.Nos. 13)</h3>
+            <p>Read the below passage carefully and answer the questions:.</p> 
+        	</br>
+			<p>Give answer: <br>
+
+				(A) If only assumption I is implicit<br>
+				(B) If only assumption II is implicit<br>
+				(C) If either I or II is implicit<br>
+				(D) If neither I nor II is implicit<br>
+				(E) If both I and II are implicit.</p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label></br>Five roommates Randy, Sally, Terry, Uma, and Vernon each do one housekeeping task mopping, sweeping, laundry, vacuuming, or dusting one day a week, Monday through Friday. </label></br>
+                            <ul>
+                              <li>Vernon does not vacuum and does not do his task on Tuesday.</br></li>
+							  <li>Sally does the dusting, and does not do it on Monday or Friday.</br></li>
+ 							  <li>The mopping is done on Thursday.</br></li>
+							  <li>Terry does his task, which is not vacuuming, on Wednesday.</br></li>
+							  <li>The laundry is done on Friday, and not by Uma.</br></li>
+							  <li>Randy does his task on Monday.</br></br></li>
+								 <b>What task does Vernon do?</b></br>
+							</ul>
+
+             
+                            <select class="form-select form-control" name="q13">
+                                <option value="13-A">A. vacuuming </option>
+                                <option value="13-B">B. dusting</option>
+                                <option value="13-C">C. mopping </option>
+                                <option value="13-D">D. sweeping </option>
+                                <option value="13-D">E. laundry</option>
+
+                            </select>
+                        </div>
+                    </div></div>
+
+
+            <h3>Direction (for Q.Nos. 14)</h3>
+            <p>Choose the pair that best represents a similar relationship to the one expressed in the original pair of words.
+			</p> </br>
+
+            <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>14. UMBRAGE : OFFENSE</label></br>
+                            <select class="form-select form-control" name="q14">
+                                <option value="14-A">A. confusion : penance</option>
+                                <option value="14-B">B. infinity : meaning</option>
+                                <option value="14-C">C. decorum : decoration</option>
+                                <option value="14-D">D. elation : jubilance</option>
+                                <option value="14-E">E. outrage : consideration</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+            <h3>Direction (for Q.Nos. 15)</h3>
+            <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label>15. A good way to approach this type of question is to use the following sentence: "A ______ could not exist without ______.". Find the word that names a necessary part of the underlined word.</label></br>
+                            <select class="form-select form-control" name="q15">
+                                <option value="15-A">A. contract</option>
+                                <option value="15-B">B. agreement</option>
+                                <option value="15-C">C. document</option>
+                                <option value="15-D">D. written</option>
+                                <option value="15-E">E. attorney</option>
+                            </select>
+                        </div>
+                    </div></div>
+
+            <h3>Direction (for Q.Nos. 16)</h3>
+            <p>In each question below is given a statement followed by two assumptions numbered I and II. You have to consider the statement and the following assumptions and decide which of the assumptions is implicit in the statement.</p> 
+        	</br>
+			<p>Give answer: <br>
+
+				(A) If only assumption I is implicit<br>
+				(B) If only assumption II is implicit<br>
+				(C) If either I or II is implicit<br>
+				(D) If neither I nor II is implicit<br>
+				(E) If both I and II are implicit.</p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label></br>Statement: Apart from the entertainment value of television, its educational value cannot be ignored. </label></br>
+                            <p>Assumption 1: People take television to be a means of entertainment only.</br>
+							   Assumption 2: The educational value of television is not realised properly.</p>
+             
+                            <select class="form-select form-control" name="q16">
+                                <option value="16-A">A. </option>
+                                <option value="16-B">B. </option>
+                                <option value="16-C">C.  </option>
+                                <option value="16-D">D.  </option>
+                                <option value="16-D">E. </option>
+
+                            </select>
+                        </div>
+                    </div></div>
+
+
+            <h3>Direction (for Q.Nos. 17)</h3>
+            <p>In each of the following questions, two statements numbered I and II are given. There may be cause and effect relationship between the two statements. These two statements may be the effect of the same cause or independent causes. These statements may be independent causes without having any relationship. Read both the statements in each question and mark your answer as</p> 
+        	</br>
+			<p>Give answer: <br>
+
+				(A) If statement I is the cause and statement II is its effect<br>
+				(B) If statement II is the cause and statement I is its effect<br>
+				(C) IIf both the statements I and II are independent causes<br>
+				(D) If both the statements I and II are effects of independent causes<br>
+				(E) If both the statements I and II are effects of some common cause</p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label><p>Assumption 1: The government has recently fixed the fees for professional courses offered by the unaided institutions which are much lower than the fees charged last year.</br>
+							   Assumption 2: The parents of the aspiring students launched a severe agitation last year protesting against the high fees charged by the unaided institutions.</p></label>
+             
+                            <select class="form-select form-control" name="q17">
+                                <option value="17-A">A. </option>
+                                <option value="17-B">B. </option>
+                                <option value="17-C">C.  </option>
+                                <option value="17-D">D.  </option>
+                                <option value="17-D">E. </option>
+
+                            </select>
+                        </div>
+                    </div></div>
+
+            <h3>Direction (for Q.Nos. 18)</h3>
+            <p>In each question below is given a statement followed by two assumptions numbered I and II. You have to consider the statement and the following assumptions and decide which of the assumptions is implicit in the statement.</p> 
+        	</br>
+			<p>Give answer: <br>
+
+				(A) If only assumption I is implicit<br>
+				(B) If only assumption II is implicit<br>
+				(C) If either I or II is implicit<br>
+				(D) If neither I nor II is implicit<br>
+				(E) If both I and II are implicit</p>
+
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label><p>Statement: "If you want timely completion of work, provide independent cabins," - An employee tells the Director of a Company. 
+                            </br>
+                        	   Assumption 1: There are not enough cabins.</br>
+							   Assumption 2: Others' presence hinders timely completion of work.</p></label>
+             
+                            <select class="form-select form-control" name="q18">
+                                <option value="18-A">A. </option>
+                                <option value="18-B">B. </option>
+                                <option value="18-C">C.  </option>
+                                <option value="18-D">D.  </option>
+                                <option value="18-D">E. </option>
+
+                            </select>
+                        </div>
+                    </div></div>
+
+                    <div class="row align-items-center">
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                        	<h3>Direction (for Q.Nos. 19)</h3>
+                            <label><p>Statement: Some clothes are marbles. Some marbles are bags.
+                            </br>
+                        	   Conclusion 1: No cloth is a bag.</br>
+                        	   Conclusion 2: All marbles are bags.</br>
+                        	   Conclusion 3: Some bags are clothes.</br>
+							   Conclusion 4: No marble is a cloth.</p></label>
+             
+                            <select class="form-select form-control" name="q19">
+                                <option value="19-A">A. Only either I or IV follows </option>
+                                <option value="19-B">B. Only either I or II follows</option>
+                                <option value="19-C">C. None follows</option>
+                                <option value="19-D">D. Only either I or III follows</option>
+
+
+                            </select>
+                        </div>
+                    </div></div>
+
+
+                        
+
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="default-btn">Submit Now <i class="flaticon-send"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="copyrights-area">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-md-6">
+                    <p>© 2021 InstaHire </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="static/js/odometer.min.js"></script>
+
+    <script src="static/js/jquery.appear.min.js"></script>
+
+    <script src="static/js/meanmenu.min.js"></script>
+
+    <script src="static/js/metismenu.min.js"></script>
+
+    <script src="static/js/simplebar.min.js"></script>
+
+    <script src="static/js/dropzone.min.js"></script>
+
+    <script src="static/js/sticky-sidebar.min.js"></script>
+
+    <script src="static/js/tweenMax.min.js"></script>
+
+    <script src="static/js/owl.carousel.min.js"></script>
+
+    <script src="static/js/wow.min.js"></script>
+
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="static/js/form-validator.min.js"></script>
+
+    <script src="static/js/contact-form-script.js"></script>
+
+    <script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:57 GMT -->
+
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard-my-profile.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 04:03:23 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidemenu-area">
+        <div class="sidemenu-header">
+            <a href="dashboard" class="navbar-brand d-flex align-items-center">
+                <img src="static/images/logo.png" alt="image">
+            </a>
+            <div class="responsive-burger-menu d-block d-lg-none">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-dashboard-content d-flex flex-column">
+
+        <div class="navbar-area">
+            <div class="main-responsive-nav">
+                <div class="main-responsive-menu">
+                    <div class="responsive-burger-menu d-lg-none d-block">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-responsive-nav">
+                <div class="mobile-responsive-menu">
+                </div>
+            </div>
+
+            <div class="desktop-nav desktop-nav-one nav-area">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                        </ul>
+                        </li>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="breadcrumb-area">
+            <h1>Personality Assessment</h1>
+            <ol class="breadcrumb">
+                <li class="item"><a href="dashboard">Home</a></li>
+            </ol>
+        </div>
+
+
+        <div class="my-profile-box">
+            <h3>Rate your personality based on the following score (1 - Lowest; 5 - Highest)</h3><br>
+            
+            <form action="/personality-assessment-send" method="POST">
+                <div class="row align-items-center">
+                    <br>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+
+                        <div class="form-group select-group">
+                            <label> 1. I am the life of the party.</label></br>
+                            <select class="form-select form-control" name="q1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 2. I don't talk a lot.</label></br>
+                            <select class="form-select form-control" name="q2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 3. I feel comfortable around people.</label></br>
+                            <select class="form-select form-control" name="q3">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 4. I keep in the background.</label></br>
+                            <select class="form-select form-control" name="q4">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 5. I start conversations.</label></br>
+                            <select class="form-select form-control" name="q5">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 6. I have little to say.</label></br>
+                            <select class="form-select form-control" name="q6">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 7. I talk to a lot of different people at parties.</label></br>
+                            <select class="form-select form-control" name="q7">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 8. I don't like to draw attention to myself.</label></br>
+                            <select class="form-select form-control" name="q8">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 9. I don't mind being the center of attention.</label></br>
+                            <select class="form-select form-control" name="q9">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 10. I am quiet around strangers.</label></br>
+                            <select class="form-select form-control" name="q10">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 11. I get stressed out easily.</label></br>
+                            <select class="form-select form-control" name="q11">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 12. I am relaxed most of the time.</label></br>
+                            <select class="form-select form-control" name="q12">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                     
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 13. I worry about things.</label></br>
+                            <select class="form-select form-control" name="q13">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                     
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 14. I seldom feel blue.</label></br>
+                            <select class="form-select form-control" name="q14">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 15. I am easily disturbed.</label></br>
+                            <select class="form-select form-control" name="q15">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                      
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 16. I get upset easily.</label></br>
+                            <select class="form-select form-control" name="q16">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                      
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 17. I change my mood a lot.</label></br>
+                            <select class="form-select form-control" name="q17">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 18. I have frequent mood swings.</label></br>
+                            <select class="form-select form-control" name="q18">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 19. I get irritated easily</label></br>
+                            <select class="form-select form-control" name="q19">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 20. I often feel blue.</label></br>
+                            <select class="form-select form-control" name="q20">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 21. I feel little concern for others.</label></br>
+                            <select class="form-select form-control" name="q21">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 22. I am interested in people.</label></br>
+                            <select class="form-select form-control" name="q22">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 23. I insult people.</label></br>
+                            <select class="form-select form-control" name="q23">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 24. I sympathize with others' feelings</label></br>
+                            <select class="form-select form-control" name="q24">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 25. I am not interested in other people's problems.</label></br>
+                            <select class="form-select form-control" name="q25">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 26. I have a soft heart.</label></br>
+                            <select class="form-select form-control" name="q26">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 27. I am not really interested in others.</label></br>
+                            <select class="form-select form-control" name="q27">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 28. I take time out for others.</label></br>
+                            <select class="form-select form-control" name="q28">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 29. I feel others' emotions.</label></br>
+                            <select class="form-select form-control" name="q29">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 30. I make people feel at ease.</label></br>
+                            <select class="form-select form-control" name="q30">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 31. I am always prepared.</label></br>
+                            <select class="form-select form-control" name="q31">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 32. I leave my belongings around.</label></br>
+                            <select class="form-select form-control" name="q32">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 33. I pay attention to details.</label></br>
+                            <select class="form-select form-control" name="q33">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                   
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 34. I make a mess of things.</label></br>
+                            <select class="form-select form-control" name="q34">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 35. I get chores done right away.</label></br>
+                            <select class="form-select form-control" name="q35">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 36. I often forget to put things back in their proper place.</label></br>
+                            <select class="form-select form-control" name="q36">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 37. I like order.</label></br>
+                            <select class="form-select form-control" name="q37">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 38. I shirk my duties.</label></br>
+                            <select class="form-select form-control" name="q38">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+            
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 39. I follow a schedule.</label></br>
+                            <select class="form-select form-control" name="q39">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 40. I am exacting in my work.</label></br>
+                            <select class="form-select form-control" name="q40">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+              
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 41. I have a rich vocabulary.</label></br>
+                            <select class="form-select form-control" name="q41">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                 
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 42. I have difficulty understanding abstract ideas.</label></br>
+                            <select class="form-select form-control" name="q42">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+           
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 43. I have a vivid imagination.</label></br>
+                            <select class="form-select form-control" name="q43">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+               
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 44. I am not interested in abstract ideas.</label></br>
+                            <select class="form-select form-control" name="q44">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+           
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 45. I have excellent ideas.</label></br>
+                            <select class="form-select form-control" name="q45">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+            
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 46. I do not have a good imagination.</label></br>
+                            <select class="form-select form-control" name="q46">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                  
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 47. I am quick to understand things.</label></br>
+                            <select class="form-select form-control" name="q47">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                  
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 48. I use difficult words.</label></br>
+                            <select class="form-select form-control" name="q48">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                  
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 49. I spend time reflecting on things.</label></br>
+                            <select class="form-select form-control" name="q49">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                
+
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                        <div class="form-group select-group">
+                            <label> 50. I am full of ideas.</label></br>
+                            <select class="form-select form-control" name="q50">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                    </div>
+
+
+
+                        
+
+                    <div class="col-lg-12 col-md-12">
+                        <button type="submit" class="default-btn">Submit Now <i class="flaticon-send"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div class="copyrights-area">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-md-6">
+                    <p>© 2021 InstaHire </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="static/js/odometer.min.js"></script>
+
+    <script src="static/js/jquery.appear.min.js"></script>
+
+    <script src="static/js/meanmenu.min.js"></script>
+
+    <script src="static/js/metismenu.min.js"></script>
+
+    <script src="static/js/simplebar.min.js"></script>
+
+    <script src="static/js/dropzone.min.js"></script>
+
+    <script src="static/js/sticky-sidebar.min.js"></script>
+
+    <script src="static/js/tweenMax.min.js"></script>
+
+    <script src="static/js/owl.carousel.min.js"></script>
+
+    <script src="static/js/wow.min.js"></script>
+
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="static/js/form-validator.min.js"></script>
+
+    <script src="static/js/contact-form-script.js"></script>
+
+    <script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:57 GMT -->
+
+</html>

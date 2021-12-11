@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/post-job.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:29 GMT -->
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+<title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+<link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+<body>
+
+<div class="preloader">
+<div class="d-table">
+<div class="d-table-cell">
+<div class="spinner"></div>
+</div>
+</div>
+</div>
+
+
+<div class="navbar-area">
+<div class="mobile-responsive-nav">
+<div class="container-fluid">
+<div class="mobile-responsive-menu">
+<div class="logo">
+<a href="index-3.html">
+<img src="static/images/logo.png" alt="logo">
+</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="desktop-nav desktop-nav-one nav-area">
+<div class="container-fluid">
+<nav class="navbar navbar-expand-md navbar-light ">
+<a class="navbar-brand" href="index-3.html">
+<img src="static/images/logo.png" alt="Logo" width="150" height="100" style="margin-left: 0.8em;">
+</a>
+
+<div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+
+<ul class="navbar-nav">
+<!-- <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="index-3.html" class="nav-link">
+Home One
+</a>
+</ul> -->
+<!-- </li>
+
+<li class="nav-item">
+<a href="#" class="nav-link">
+Jobs
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="job-listing.html" class="nav-link">Job Listing</a>
+</li>
+<li class="nav-item">
+<a href="post-job.html" class="nav-link">Post A Job</a>
+</li>
+<li class="nav-item">
+<a href="job-details.html" class="nav-link">Job Details</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Employers
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="employers-listing.html" class="nav-link">
+Employers Listing
+</a>
+</li>
+<li class="nav-item">
+<a href="employers-details.html" class="nav-link">
+Employers Details
+</a>
+</li>
+<li class="nav-item">
+<a href="dashboard.html" class="nav-link">
+Employers Dashboard
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Candidates
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="candidates-listing.html" class="nav-link">
+Candidates Listing
+</a>
+</li>
+<li class="nav-item">
+<a href="candidates-details.html" class="nav-link">
+Candidates Details
+</a>
+</li>
+<li class="nav-item">
+<a href="candidates-dashboard.html" class="nav-link">
+Candidates Dashboard
+</a>
+</li>
+ </ul>
+</li> -->
+<!-- <li class="nav-item">
+<a href="#" class="nav-link">
+Blog
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-1.html" class="nav-link">
+Blog Grid
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-2.html" class="nav-link">
+Blog Left Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-3.html" class="nav-link">
+Blog Right Sidebar
+</a>
+</li>
+<li class="nav-item">
+<a href="blog-details.html" class="nav-link">
+Blog Details
+</a>
+</li>
+<li class="nav-item">
+<a href="categories.html" class="nav-link">
+Categories
+</a>
+</li>
+<li class="nav-item">
+<a href="tags.html" class="nav-link">
+Tags
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Pages
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="about.html" class="nav-link">
+About Us
+</a>
+</li>
+<li class="nav-item">
+<a href="contact.html" class="nav-link">
+Contact Us
+</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">
+Testimonials
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Freelancer
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+ <a href="freelancer.html" class="nav-link">
+Freelancer
+</a>
+</li>
+<li class="nav-item">
+<a href="freelancer-details.html" class="nav-link">
+Freelancer Details
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="dashboard-invoice.html" class="nav-link">
+Invoice
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Company
+<i class="ri-arrow-down-s-line"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="company.html" class="nav-link">
+Company Listing
+</a>
+</li>
+<li class="nav-item">
+<a href="company-details.html" class="nav-link">
+Company Details
+</a>
+</li>
+<li class="nav-item">
+<a href="search-job.html" class="nav-link">
+Search Job
+</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="pricing.html" class="nav-link">
+Pricing Plan
+</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">
+FAQ
+</a>
+</li>
+<li class="nav-item">
+<a href="log-in-register.html" class="nav-link">
+Log In / Register
+</a>
+</li>
+<li class="nav-item">
+<a href="forgot-password.html" class="nav-link">
+Forgot Password
+</a>
+</li>
+<li class="nav-item">
+<a href="terms-condition.html" class="nav-link">
+Terms & Conditions
+</a>
+ </li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">
+Privacy Policy
+</a>
+</li>
+<li class="nav-item">
+<a href="404.html" class="nav-link">
+404 Page
+</a>
+</li>
+<li class="nav-item">
+<a href="coming-soon.html" class="nav-link">
+Coming Soon
+</a>
+</li> -->
+</ul>
+</li>
+</ul>
+<div class="others-options d-flex align-items-center">
+<div class="optional-item">
+<!-- <a href="log-in-register.html" class="default-btn two border-radius-5">Login / Register <i class="ri-user-3-line"></i></a> -->
+</div>
+<div class="optional-item">
+<!-- <a href="post-job.html" class="default-btn border-radius-5">Post A Job <i class="ri-briefcase-2-line"></i></a> -->
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div class="side-nav-responsive">
+<div class="container-max">
+<div class="dot-menu">
+<div class="circle-inner">
+<div class="circle circle-one"></div>
+<div class="circle circle-two"></div>
+<div class="circle circle-three"></div>
+</div>
+</div>
+<div class="container">
+<div class="side-nav-inner">
+<div class="side-nav justify-content-center align-items-center">
+<div class="side-nav-item">
+<a href="log-in-register.html" class="default-btn two">
+Login / Register <i class="ri-user-3-line"></i>
+</a>
+</div>
+<div class="side-nav-item">
+<a href="post-job.html" class="default-btn">
+Post A Job <i class="ri-briefcase-2-line"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="inner-banner">
+<div class="container">
+<div class="inner-title text-center">
+<h3>Post A Job</h3>
+<ul>
+<li>
+<a href="index-3.html">Home</a>
+</li>
+<li>Post A Job</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="post-job-area pt-100 pb-70">
+<div class="container">
+<div class="post-job-form">
+<h2>Job Information</h2>
+<div class="bar"></div>
+<div class="contact-form">
+<h3>Basic Info</h3>
+<form action="post-a-job-send" method="POST">
+<div class="row">
+<div class="col-lg-12">
+<div class="form-group">
+<label>Job title*</label>
+<input type="text" class="form-control" required data-error="Please Enter Job title" name="job_name">
+</div>
+</div>
+<div class="col-lg-12">
+<div class="form-group">
+<label>Company Name*</label>
+<input type="text" class="form-control" required data-error="Please Enter Job title" name="job_company_name">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group select-group">
+<label>Category*</label>
+<select class="form-select form-control" name="job_category">
+<option data-display='UI/UX Designer'>UI/UX Designer</option>
+<option value="Designer"> Designer</option>
+<option value="Web Developer">Web Developer</option>
+<option value="Engineer">Engineer</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group select-group">
+<label>Job Types*</label>
+<select class="form-select form-control" name="job_type">
+<option data-display='Full Time'>Full Time</option>
+<option value="1"> Part Time</option>
+<option value="3">Internship</option>
+</select>
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+<label>Application Deadline</label>
+<input type="date" name="job_due_date" id="msg_subject" class="form-control" required data-error="Please Enter Date" placeholder="01/01/2021">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group select-group">
+<label>Salary Currency</label>
+<select class="form-select form-control" name="job_salary">
+<option value="1">Default</option>
+<option value="20000 To 30000">20000 To 30000</option>
+<option value="40000 To 50000">40000 To 50000</option>
+<option value="60000 To 70000">60000 To 70000</option>
+<option value="80000 To 90000">80000 To 90000</option>
+</select>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<label>Job Description*</label>
+<textarea class="form-control" cols="30" rows="5" required data-error="Write your Job Description" name="job_desc"></textarea>
+</div>
+</div>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<label>No. of Vacancies</label>
+<input class="form-control" type="text" name="job-vacant-count">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+<label>Exerienced required</label>
+<input class="form-control" type="text" name="exp-required">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+<label>Job location</label>
+<input class="form-control" type="text" name="job-location">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+<label>Skills Required</label>
+<input class="form-control" type="text" name="skills-req">
+</div>
+</div>
+<div class="col-lg-6 col-md-6">
+<div class="form-group">
+<label>Remote work available?</label>
+<input class="form-control" type="text" name="is-remote">
+</div>
+</div>
+
+
+<div class="col-lg-12 col-md-12">
+<button type="submit" class="default-btn border-radius-5">
+Post Job <i class="ri-chat-4-line"></i>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- <div class="employers-cv-area">
+<div class="container">
+<div class="employers-cv-bg">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<div class="employers-cv-content">
+<h2>Let Employers Find You</h2>
+<div class="bar"></div>
+<p>Advertise your jobs to millions of monthly users and search 15.8 million CV in our database.</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="employers-cv-btn">
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#debdb1b0aabfbdaa9ea4b1bcbbb0f0bdb1b3">Upload Your CV</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div> -->
+
+<!-- 
+<footer class="footer-area">
+<div class="container">
+<div class="footer-top pt-100 pb-70">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-md-6">
+<div class="footer-widget">
+<div class="footer-logo">
+<a href="index-3.html">
+<img src="static/images/logo.png" alt="Footer Logo" width="650" height="200" style="margin-bottom: 4em;">
+</a>
+</div>
+<ul class="footer-contact-list">
+<li>
+<i class="ri-map-pin-line"></i>
+<div class="content">
+<a href="../../../www.google.com/maps/place/328%2bQueensberry%2bSt%2c%2bNorth%2bMelbourne%2bVIC%2b3051%2c%2bAustralia/%40-37.8036631%2c144.9548647%2c17z/data%3d%213m1%214b1%214m5%213m4%211s0x6ad65d33b5df9565_0xd916103dfa818579%218m2%213d-37.8036674%214d1444a53.html" target="_blank">
+400-265 Yorkland Blvd Toronto, ON M2J 1S5
+</a>
+</div>
+</li> -->
+<!-- <li>
+<i class="ri-mail-line"></i>
+<div class="content">
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#a1c8cfc7cee1dbcec3c4cf8fc2cecc">
+<span class="__cf_email__" data-cfemail="a4d7d1d4d4cbd6d0e4decbc6c1ca8ac7cbc9">[email&#160;protected]</span>
+</a>
+</div>
+</li> -->
+<!-- <li>
+<i class="ri-phone-line"></i>
+<div class="content">
+<a href="tel:+4471234567890">
++1 444 555 6446
+</a>
+</div>
+</li>
+</ul>
+</div>
+ </div>
+<div class="col-lg-2 col-sm-6 col-md-6">
+<div class="footer-widget">
+<h3>For Employer</h3>
+<ul class="footer-list">
+<li>
+<a href="candidates-listing.html" target="_blank">
+Browse Candidates
+</a>
+</li>
+<li>
+<a href="dashboard.html" target="_blank">
+Employer Dashboard
+</a>
+</li>
+<li>
+<a href="dashboard-packages.html" target="_blank">
+Job Packages
+</a>
+</li>
+<li> -->
+<!-- <a href="job-listing.html" target="_blank">
+Jobs Featured
+</a>
+</li>
+<li>
+<a href="post-job.html" target="_blank">
+Post A Job
+</a> -->
+<!-- </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-md-4">
+<div class="footer-widget ps-5">
+<h3>For Candidates</h3>
+<ul class="footer-list">
+<li>
+<a href="job-listing.html" target="_blank">
+Browse Jobs
+</a>
+</li>
+<li>
+<a href="dashboard-submit-resume.html" target="_blank">
+Submit Resume
+</a>
+</li>
+<li>
+<a href="dashboard.html" target="_blank">
+Candidates Dashboard
+</a>
+</li>
+<li> -->
+<!-- <a href="job-listing.html" target="_blank">
+Browse Categories
+</a>
+</li>
+<li>
+<a href="candidates-listing.html" target="_blank">
+Candidate Listing
+</a> -->
+<!-- </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-md-4">
+<div class="footer-widget">
+<h3>Company</h3>
+<ul class="footer-list">
+<li>
+<a href="about.html" target="_blank">
+About Us
+</a>
+</li>
+<li>
+<a href="contact.html" target="_blank">
+ Contact Us
+</a>
+</li>
+<li>
+<a href="terms-condition.html" target="_blank">
+Terms & Conditions
+</a>
+</li>
+<li> -->
+<!-- <a href="privacy-policy.html" target="_blank">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="candidates-listing.html" target="_blank">
+Candidate Listing
+</a> -->
+<!-- </li>
+</ul>
+</div>
+</div>
+<div class="col-lg-2 col-sm-6 col-md-4">
+<div class="footer-widget">
+<h3>Quick Links</h3>
+<ul class="footer-list">
+<li>
+<a href="job-listing.html" target="_blank">
+Jobs Listing
+</a>
+</li>
+<li>
+<a href="employers-listing.html" target="_blank">
+Employer Listing
+</a>
+</li>
+<li>
+<a href="post-job.html" target="_blank">
+Post New Job
+</a>
+</li>
+<li> -->
+<!-- <a href="employers-listing.html" target="_blank">
+All Employers
+</a>
+</li>
+<li>
+<a href="job-listing.html" target="_blank">
+Featured Jobs
+</a> -->
+<!-- </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="copyright-area">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-7">
+<div class="copy-right-text">
+<p>
+© 2021 InstaHire -->
+<!-- <a href="../../../hibootstrap.com/index-3.html" target="_blank">HiBootstrap</a>
+ --><!-- </p>
+</div>
+</div>
+<div class="col-lg-6 col-md-5">
+<div class="copy-right-social-link">
+<ul class="social-link">
+<li>
+<a href="#" target="_blank">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a href="#" target="_blank">
+<i class="ri-instagram-fill"></i>
+</a>
+</li>
+<li>
+<a href="#" target="_blank">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a href="#" target="_blank">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer> -->
+
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="static/js/jquery.min.js"></script>
+
+<script src="static/js/bootstrap.bundle.min.js"></script>
+
+<script src="static/js/jquery.magnific-popup.min.js"></script>
+
+<script src="static/js/odometer.min.js"></script>
+
+<script src="static/js/jquery.appear.min.js"></script>
+
+<script src="static/js/meanmenu.min.js"></script>
+
+<script src="static/js/metismenu.min.js"></script>
+
+<script src="static/js/simplebar.min.js"></script>
+
+<script src="static/js/dropzone.min.js"></script>
+
+<script src="static/js/sticky-sidebar.min.js"></script>
+
+<script src="static/js/tweenMax.min.js"></script>
+
+<script src="static/js/owl.carousel.min.js"></script>
+
+<script src="static/js/wow.min.js"></script>
+
+<script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+<script src="static/js/form-validator.min.js"></script>
+
+<script src="static/js/contact-form-script.js"></script>
+
+<script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:57:35 GMT -->
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:36 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sidemenu-area">
+        <div class="sidemenu-header">
+            <a href="employer" class="navbar-brand d-flex align-items-center">
+                <img src="static/images/logo.png" alt="image">
+            </a>
+            <div class="responsive-burger-menu d-block d-lg-none">
+                <span class="top-bar"></span>
+                <span class="middle-bar"></span>
+                <span class="bottom-bar"></span>
+            </div>
+        </div>
+        <div class="sidemenu-body">
+            <ul class="sidemenu-nav metisMenu h-100" id="sidemenu-nav" data-simplebar>
+                <li class="nav-item active">
+                    <a href="employer" class="nav-link">
+                        <span class="icon"><i class="ri-home-line"></i></span>
+                        <span class="menu-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                <li class="nav-item">
+                    <a href="employer-all-applicants" class="nav-link">
+                        <span class="icon"><i class="ri-notification-3-line"></i></span>
+                        <span class="menu-title">All Applicants</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="employer-shortlisted-candidates" class="nav-link">
+                        <span class="icon"><i class="ri-list-check"></i></span>
+                        <span class="menu-title">Shortlisted Candidates</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="post-a-job" class="nav-link">
+                        <span class="icon"><i class="ri-list-check"></i></span>
+                        <span class="menu-title">Post a job</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="employer-manage-job" class="nav-link">
+                        <span class="icon"><i class="ri-list-check"></i></span>
+                        <span class="menu-title">Manage Jobs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="resume-manage" class="nav-link">
+                        <span class="icon"><i class="ri-list-check"></i></span>
+                        <span class="menu-title">Top Candidates</span>
+                    </a>
+                </li>
+
+                <!-- <li class="nav-item">
+<a href="candidates-dashboard-recommended-job" class="nav-link">
+<span class="icon"><i class="ri-notification-3-line"></i></span>
+<span class="menu-title">Recommended Jobs</span>
+</a>
+</li> -->
+
+                <li class="nav-item">
+                    <a href="index" class="nav-link">
+                        <span class="icon"><i class="ri-logout-circle-r-line"></i></span>
+                        <span class="menu-title">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="main-dashboard-content d-flex flex-column">
+
+        <div class="navbar-area">
+            <div class="main-responsive-nav">
+                <div class="main-responsive-menu">
+                    <div class="responsive-burger-menu d-lg-none d-block">
+                        <span class="top-bar"></span>
+                        <span class="middle-bar"></span>
+                        <span class="bottom-bar"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-responsive-nav">
+                <div class="mobile-responsive-menu">
+                </div>
+            </div>
+
+            <div class="desktop-nav desktop-nav-one nav-area">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                        </ul>
+
+                        <div class="others-options d-flex align-items-center">
+                            <div class="optional-item">
+                                <div class="dropdown profile-nav-item">
+                                    <a href="#" class="dropdown-bs-toggle" role="button" data-bs-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        <div class="menu-profile">
+                                            <img src="static/images/user-img/user-img2.jpg" class="rounded-circle"
+                                                alt="image">
+                                            <span class="name">My Account</span>
+                                        </div>
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-header d-flex flex-column align-items-center">
+                                            <div class="figure mb-3">
+                                                <img src="static/images/user-img/user-img2.jpg" class="rounded-circle"
+                                                    alt="image">
+                                            </div>
+                                            <div class="info text-center">
+                                                <span class="name">Jean Burke</span>
+                                                <p class="mb-3 email"><a
+                                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection"
+                                                        class="__cf_email__"
+                                                        data-cfemail="e28a878e8e8da28887838c8097908987cc818d8f">[email&#160;protected]</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-body">
+                                            <ul class="profile-nav p-0 pt-3">
+                                                <li class="nav-item active">
+                                                    <a href="employer" class="nav-link">
+                                                        <span class="icon"><i class="ri-home-line"></i></span>
+                                                        <span class="menu-title">Dashboard</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="dashboard-applicants" class="nav-link">
+                                                        <span class="icon"><i class="ri-file-list-line"></i></span>
+                                                        <span class="menu-title">All Applicants</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="dashboard-submit-resume" class="nav-link">
+                                                        <span class="icon"><i class="ri-bookmark-line"></i></span>
+                                                        <span class="menu-title">Submit Resumes</span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="dashboard-packages" class="nav-link">
+                                                        <span class="icon"><i class="ri-stack-fill"></i></span>
+                                                        <span class="menu-title">Packages</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="dropdown-footer">
+                                            <ul class="profile-nav">
+                                                <li class="nav-item">
+                                                    <a href="index" class="nav-link"><i
+                                                            class="ri-logout-box-r-line"></i> <span>Logout</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="side-nav-responsive">
+                <div class="container-max">
+                    <div class="dot-menu">
+                        <div class="circle-inner">
+                            <div class="circle circle-one"></div>
+                            <div class="circle circle-two"></div>
+                            <div class="circle circle-three"></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="side-nav-inner">
+                            <div class="side-nav justify-content-center align-items-center">
+                                <div class="option-item">
+                                    <div class="dropdown profile-nav-item">
+                                        <a href="#" class="dropdown-bs-toggle" role="button" data-bs-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            <div class="menu-profile">
+                                                <img src="static/images/user-img/user-img2.jpg" class="rounded-circle"
+                                                    alt="image">
+                                                <span class="name">My Account</span>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-header d-flex flex-column align-items-center">
+                                                <div class="figure mb-3">
+                                                    <img src="static/images/user-img/user-img2.jpg"
+                                                        class="rounded-circle" alt="image">
+                                                </div>
+                                                <div class="info text-center">
+                                                    <span class="name">Andy Smith</span>
+                                                    <p class="mb-3 email"><a
+                                                            href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection"
+                                                            class="__cf_email__"
+                                                            data-cfemail="731b161f1f1c33121d17011c001e1a071b5d101c1e">[email&#160;protected]</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <ul class="profile-nav p-0 pt-3">
+                                                    <li class="nav-item active">
+                                                        <a href="employer" class="nav-link">
+                                                            <span class="icon"><i class="ri-home-line"></i></span>
+                                                            <span class="menu-title">Dashboard</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="dashboard-applicants" class="nav-link">
+                                                            <span class="icon"><i class="ri-file-list-line"></i></span>
+                                                            <span class="menu-title">All Applicants</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="dashboard-submit-resume" class="nav-link">
+                                                            <span class="icon"><i class="ri-bookmark-line"></i></span>
+                                                            <span class="menu-title">Submit Resumes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a href="dashboard-packages" class="nav-link">
+                                                            <span class="icon"><i class="ri-stack-fill"></i></span>
+                                                            <span class="menu-title">Packages</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-footer">
+                                                <ul class="profile-nav">
+                                                    <li class="nav-item">
+                                                        <a href="index" class="nav-link"><i
+                                                                class="ri-logout-box-r-line"></i>
+                                                            <span>Logout</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="breadcrumb-area">
+            <h1>Howdy, Employer!</h1>
+            <ol class="breadcrumb">
+                <li class="item"><a href="employer">Home</a></li>
+                <li class="item">Dashboard</li>
+            </ol>
+        </div>
+
+
+        <div class="notification-alert alert alert-success alert-dismissible fade show" role="alert">
+            Greeting Employer!
+            <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+
+        <div class="dashboard-fun-fact-area">
+            <div class="row">
+                <!-- <div class="col-lg-3 col-md-6 col-sm-6">
+<div class="stats-fun-fact-box">
+<div class="icon-box">
+<i class="ri-briefcase-line"></i>
+</div>
+<span class="sub-title">Posted Jobs</span>
+<h3>100</h3>
+</div>
+</div> -->
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="stats-fun-fact-box">
+                        <div class="icon-box">
+                            <i class="ri-file-list-line"></i>
+                        </div>
+                        <span class="sub-title">Application recieved</span>
+                        <h3>240</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="stats-fun-fact-box">
+                        <div class="icon-box">
+                            <i class="ri-chat-2-line"></i>
+                        </div>
+                        <span class="sub-title">Messages</span>
+                        <h3>23</h3>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="stats-fun-fact-box">
+                        <div class="icon-box">
+                            <i class="ri-bookmark-line"></i>
+                        </div>
+                        <span class="sub-title">Shortlist</span>
+                        <h3>34</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <!-- <div class="col-lg-6 col-md-12"> -->
+            <div class="recent-notifications-box">
+                <h3>Recent Notifications</h3>
+                <ul>
+                    <li>
+                        <div class="icon">
+                            <i class="ri-briefcase-2-line"></i>
+                        </div>
+                        <span>Sam Joe</span> Applied For A Job <strong>Business Analyst</strong>
+                        <button type="button" class="close" data-bs-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                </ul>
+                <!-- </div> -->
+            </div>
+        </div>
+
+
+        <div class="copyrights-area">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-sm-6 col-md-6">
+                    <p>© 2021 InstaHire </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="static/js/odometer.min.js"></script>
+
+    <script src="static/js/jquery.appear.min.js"></script>
+
+    <script src="static/js/meanmenu.min.js"></script>
+
+    <script src="static/js/metismenu.min.js"></script>
+
+    <script src="static/js/simplebar.min.js"></script>
+
+    <script src="static/js/dropzone.min.js"></script>
+
+    <script src="static/js/sticky-sidebar.min.js"></script>
+
+    <script src="static/js/tweenMax.min.js"></script>
+
+    <script src="static/js/owl.carousel.min.js"></script>
+
+    <script src="static/js/wow.min.js"></script>
+
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="static/js/form-validator.min.js"></script>
+
+    <script src="static/js/contact-form-script.js"></script>
+
+    <script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/dashboard by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:57 GMT -->
+
+</html>

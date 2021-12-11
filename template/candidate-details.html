@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/candidates-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:59:06 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar-area">
+        <div class="mobile-responsive-nav">
+            <div class="container-fluid">
+                <div class="mobile-responsive-menu">
+                    <div class="logo">
+                        <a href="index">
+                            <img src="static/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desktop-nav desktop-nav-one nav-area">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <a class="navbar-brand" href="index">
+                        <img src="static/images/logo.png" alt="Logo" width="150" height="100"
+                            style="margin-left: 0.8em;">
+                    </a>
+
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+
+                        <ul class="navbar-nav"></ul>
+                        </li>
+                        </ul>
+                        <div class="others-options d-flex align-items-center">
+                            <div class="optional-item"></div>
+                            <div class="optional-item"></div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="side-nav-responsive">
+            <div class="container-max">
+                <div class="dot-menu">
+                    <div class="circle-inner">
+                        <div class="circle circle-one"></div>
+                        <div class="circle circle-two"></div>
+                        <div class="circle circle-three"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="side-nav-inner">
+                        <div class="side-nav justify-content-center align-items-center">
+                            <div class="side-nav-item"></div>
+                            <div class="side-nav-item"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="inner-banner">
+        <div class="container">
+            <div class="inner-title text-center">
+                <h3>Candidates Details</h3>
+                <ul>
+                    <li>
+                        <a href="index">Home</a>
+                    </li>
+                    <li>Candidates Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="candidates-details-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="candidates-details-right">
+                        <div class="content-profile">
+                            <div class="content-profile-img">
+                                <img src="static/images/freelancers/freelancers-img3.jpg" alt="Images">
+                            </div>
+                            <div class="title">
+                                <h3>
+                                    {{can_name}}
+                                </h3>
+                                <img src="static/images/freelancers/flag.png" alt="Images">
+                            </div>
+                            <p>{{recommended_jobs}}</p>
+                            <p>Logical Assessment Score: {{logical_score}}</p>
+                            <p>Personality Assessment Score: {{personality_score}}</p>
+                            <div class="rating">
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill"></i>
+                                <i class="ri-star-fill rating-color"></i>
+                                <i class="ri-star-fill rating-color"></i>
+                            </div>
+                        </div>
+                        <div class="content-info">
+                            <h3>General Info</h3>
+                            <ul>
+                                <li>
+                                    <span>Location</span>
+                                    <a href="https://www.google.com/maps/place/New+York,+NY,+USA/@40.6976637,-74.119764,11z/data=!3m1!4b1!4m5!3m4!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!8m2!3d40.7127753!4d-74.0059728"
+                                        target="_blank">{{can_location}}</a>
+                                </li>
+                                <li>
+                                    <span>Email</span>
+                                    <a
+                                        href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#aec7c0c8c1eed4c1cccbc080cdc1c3">
+                                        <span class="__cf_email__"
+                                            data-cfemail="d5bcbbb3ba95afbab7b0bbfbb6bab8">{{can_email}}</span></a>
+                                </li>
+                                <li>
+                                    <span>Phone</span>
+                                    <a href="tel:+4471234567890">{{can_phone_ctry_code}} {{can_phone}}</a>
+                                </li>
+                                <li>
+                                    <span>Availability</span>
+                                    <a href="#">{{can_availability}}</a>
+                                </li>
+                                <li>
+                                    <span>Date of Birth</span>
+                                    <a href="#">{{can_dob}}</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="content-widget-right">
+                        <h3>Download Resume</h3>
+                        <a href="http://www.africau.edu/images/default/sample.pdf" target="_blank"
+                            class="download-btn">PDF Formate CV <i class="ri-file-download-line"></i></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-8">
+                    <div class="candidates-details-content">
+                        <div class="content">
+                            <h3>About</h3>
+                            <div class="bar"></div>
+                            <p>{{can_about}}</p>
+                        </div>
+                        <div class="candidates-details-experience">
+                            <h3>Work Experience</h3>
+                            <div class="bar"></div>
+                            <p>Years: {{can_experience}}</p><br>
+                        </div>
+                        <div class="candidates-skill">
+                            <h3>Qualification</h3>
+                            <div class="bar"></div>
+                            <ul class="candidates-skill-tag">
+                                <li><a href="tags.html" target="_blank">{{can_qualification}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="static/js/jquery.min.js"></script>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+
+    <script src="static/js/odometer.min.js"></script>
+
+    <script src="static/js/jquery.appear.min.js"></script>
+
+    <script src="static/js/meanmenu.min.js"></script>
+
+    <script src="static/js/metismenu.min.js"></script>
+
+    <script src="static/js/simplebar.min.js"></script>
+
+    <script src="static/js/dropzone.min.js"></script>
+
+    <script src="static/js/sticky-sidebar.min.js"></script>
+
+    <script src="static/js/tweenMax.min.js"></script>
+
+    <script src="static/js/owl.carousel.min.js"></script>
+
+    <script src="static/js/wow.min.js"></script>
+
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+
+    <script src="static/js/form-validator.min.js"></script>
+
+    <script src="static/js/contact-form-script.js"></script>
+
+    <script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:57:35 GMT -->
+
+</html>

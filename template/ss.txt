@@ -1,0 +1,23 @@
+The bag-of-words model is a way of representing text data when modeling text with machine learning algorithms.
+A problem with modeling text is that it is messy, and techniques like machine learning algorithms prefer well defined fixed-length inputs and outputs.
+Machine learning algorithms cannot work with raw text directly; the text must be converted into numbers. Specifically, vectors of numbers.
+This is called feature extraction or feature encoding.
+A popular and simple method of feature extraction with text data is called the bag-of-words model of text.
+
+A bag-of-words is a representation of text that describes the occurrence of words within a document. It involves two things:
+
+A vocabulary of known words.
+A measure of the presence of known words.
+
+slide 14
+So here we can see a sample code for bag of words using the gensim library.
+The preview of sample preprocessed document shows that the word 23 analysi has appeared one time and the word 83 face has also appeared one time.
+
+slide 15
+So now first of all we are running LDA using the bag of words,
+so here we are training our model using gensim.models.LdaMulticore and then we will besave our model.
+
+For each topic, we will explore the words occuring in that topic and its relative weight.
+
+slide 16
+No after running LDA using bag of words, we will be doing performance evaluation using LDA bag of words.

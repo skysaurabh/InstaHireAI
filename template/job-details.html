@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/job-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:58:29 GMT -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/metismenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/simplebar.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/odometer.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/meanmenu.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+
+    <title>InstaHire.AI - Job Board & Hiring Portal</title>
+
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+</head>
+
+<body>
+
+    <div class="preloader">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar-area">
+        <div class="mobile-responsive-nav">
+            <div class="container-fluid">
+                <div class="mobile-responsive-menu">
+                    <div class="logo">
+                        <a href="index">
+                            <img src="static/images/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="desktop-nav desktop-nav-one nav-area">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md navbar-light ">
+                    <a class="navbar-brand" href="index">
+                        <img src="static/images/logo.png" alt="Logo" width="150" height="100"
+                            style="margin-left: 0.8em;">
+                    </a>
+
+                    </nav></div></div></div>
+
+    <div class="inner-banner">
+        <div class="container">
+            <div class="inner-title text-center">
+                <h3>Job Details</h3>
+                <ul>
+                    <li>Job Details</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="job-details-area pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="find-jobs-card d-flex align-items-center box-shadow">
+                        <div class="find-jobs-img">
+                                <img src="static/images/find-jobs/find-jobs3.jpg" alt="Images">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <ul class="content-list">
+                                <li class="time">{{job_type}}</li>
+                            </ul>
+                            <h3>{{job_name}}</h3>
+                            <ul class="content-list2">
+                                <li class="list-one"> {{job_company_name}}</li>
+                                <li class="list-two"><i class="ri-time-line"></i> {{job_due_date}}</li>
+                            </ul>
+                            <ul class="content-list3">
+                                <li><i class="ri-briefcase-line"></i> Category : <b>{{job_category}}</b></li>
+                                <li><i class="ri-map-pin-line"></i> Location : <b>{{job_location}}</b></li>
+                                <li><i class="ri-currency-line"></i>Salary : <b>{{job_salary}}</b></li>
+                            </ul>
+                        </div>
+                        <div class="find-jobs-btn">
+                            <a href="/logical-assessment" class="default-btn border-radius-5">Apply
+                                Now<i class="ri-send-plane-2-line"></i></a>
+                        </div>
+                        <button class="bookmark-btn"><i class="ri-bookmark-line"></i></button>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="job-details-widget-side pr-20">
+                        <div class="job-details-widget">
+                            <h3 class="title">Job Overview</h3>
+                            <div class="bar"></div>
+                            <ul class="job-details-category">
+                                <li>Published On: <span>{{job_pub_on}}</span></li>
+                                <li>Vacancy: <span>{{job_vacant_count}}</span></li>
+                                <li>Job Type: <span>{{job_type}}</span></li>
+                                <li>Experience: <span>{{job_experience}} Year(s)</span></li>
+                                <li>Job Location: <span>{{job_location}}</span></li>
+                                <li>Category: <span>{{job_category}}</span></li>
+                                <li>Application Due: <span>{{job_due_date}}</span></li>
+                            </ul>
+                        </div>
+                        <div class="job-details-widget">
+                            <h3 class="title">Job Skills</h3>
+                            <div class="bar"></div>
+                            <ul class="job-details-widget-tag">
+                                <li><a href="#" target="_blank">{{job_skills}}</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="job-details-content">
+                        <div class="content mb-30">
+                            <h3>Job Description</h3>
+                            <div class="bar"></div>
+                            <p>{{job_desc}}</p>
+                        </div>
+</div></div></div></div></div>
+
+
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="static/js/jquery.min.js"></script>
+
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    
+    <script src="static/js/odometer.min.js"></script>
+    
+    <script src="static/js/jquery.appear.min.js"></script>
+    
+    <script src="static/js/meanmenu.min.js"></script>
+    
+    <script src="static/js/metismenu.min.js"></script>
+    
+    <script src="static/js/simplebar.min.js"></script>
+    
+    <script src="static/js/dropzone.min.js"></script>
+    
+    <script src="static/js/sticky-sidebar.min.js"></script>
+    
+    <script src="static/js/tweenMax.min.js"></script>
+    
+    <script src="static/js/owl.carousel.min.js"></script>
+    
+    <script src="static/js/wow.min.js"></script>
+    
+    <script src="static/js/jquery.ajaxchimp.min.js"></script>
+    
+    <script src="static/js/form-validator.min.js"></script>
+    
+    <script src="static/js/contact-form-script.js"></script>
+    
+    <script src="static/js/custom.js"></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/zoben/default/index by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 29 Sep 2021 03:57:35 GMT -->
+
+</html>
