@@ -2,7 +2,6 @@
 
 ## Chatbot
 What makes our application InstaHireAI "THE INSTANT" hiring system is the customer centric approach that we took, especially keeping generation X in mind where they need everything instantly. Apart from the traditional form-based user input we have the provision for fast, easy, and fun chatbot inputs where the use can interact with our chatbots and get all the details like education, experience, skillsets filled in instantly and with ease.	 
-Next slide please…
 
 To implement such an interactive chatbot we have used NLP and RiveScript, which is a text-based scripting language.
 
